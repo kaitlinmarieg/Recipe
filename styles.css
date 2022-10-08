@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+	background-color: rgba(122,191,191,.5);
+}
+
+body {
+	width: 414px;
+	background-color: #F2F2F2;
+	margin: 0 auto;
+	padding: 5px;
+	color: #0D0D0D;
+}
+
+header h1 {
+	font-size: 40px;
+	font-family: 'Bebas Neue', cursive;
+	text-align: center;
+	position: relative;
+	margin-top: 130px;
+}
+
+nav {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	width: 414px;
+  	height: 100px;
+  	background-color: #FFFFFF;
+	box-shadow: 0 3px 10px rgba(0 0 0 / 0.4);
+  	position: fixed;
+  	top: 0;
+	padding: -5px;
+  	z-index: 1;
+	position: fixed;
+}
+
+nav ul {
+	padding: 0px;
+	margin: 0;
+	list-style: none;
+	overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+	text-align: center;
+}
+
+nav a {
+	font-size: 20px;
+	font-family: 'Bebas Neue', cursive;
+	text-decoration: none;
+	color: #EB5428;
+	display: block;
+}
+
+nav span {
+	font-size: 20px;
+	font-family: 'Bebas Neue', cursive;
+}
+
+nav li {
+	list-style: none;
+	color: #0D0D0D;
+}
+
+nav h2 {
+	visibility: hidden;
+	max-height: 0;
+}
+
+#navigation {
+	text-decoration: none;
+}
+
+[href="home"] {
+	position: absolute;
+	top:2px;
+	transform: translate(-50%, -50%);
+	cursor: default;
+}
+
+[href="#user"] {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    padding: 0px;
+	color: #0D0D0D;
+}
+
+[href="#menu"]{
+	position: absolute;
+	top: 70px;
+	left: 30px;
+	color: #0D0D0D;
+}
+
+.hamburger {
+	position: relative;
+	width: 100%;
+	top: -30px;
+	left: -20px;
+}
+
+.icon-tabler-user-circle {
+	stroke: #EB5428;
+	position: absolute;
+	top: 30px;
+	right: 20px;
+}
+
+.hover:hover {
+	width: 40px;
+	height: 50px;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    user-select: none;
+}
+
+label span {
+	display: block;
+	position: relative;
+	bottom: -80px;
+	left: 70px;
+    transition: background-color .2s ease-out;
+}
+
+label span:before, label span:after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+label span:before {
+    top: 5px;
+}
+
+label span:after {
+    top: -5px;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ ul {
+    max-height: 500px;
+}
+
+input:checked ~ label span {
+    background: transparent;
+}
+
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+
+.icon-tabler-tools-kitchen {
+  background-color: #EB5428;
+  position: absolute;
+  top: -10px;
+  padding: 20px 90px;
+  left: 80px;
+  margin: 10px;
+}
+
+input {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.search {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+.search input {
+	border: 3px solid #EB5428;
+	padding: 5px;
+	background-color: #fff;
+	width: 250px;
+}
+
+.icon-tabler-search {
+	stroke: #fff;
+}
+
+button {
+	left: 350px;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: 'Bebas Neue', cursive;
+	text-align: center;
+}
+
+p {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+dl {
+	display: grid;
+}
+
+dt {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+dd {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+figcaption {
+	font-size: 20px;
+	font-family: 'Bebas Neue', cursive;
+	color: #EB5428;
+}
+
+menu figure {
+	display: inline-block;
+	margin: 0 15px;
+}
+
+menu a {
+	color: #EB5428;
+	text-decoration: none;
+}
+
+menu li {
+	font-family: 'Bebas Neue', cursive;
+	list-style: none;
+	font-size: 20px;
+	font-family: 'Bebas Neue', cursive;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+h3 {
+	font-size: 25px;
+	font-family: 'Bebas Neue', cursive;
+}
+
+#details h2 {
+	margin-bottom: 0;
+}
+
+#ingredients {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+#ingredients h2 {
+	margin-bottom: 0;
+}
+
+#ingredients li {
+	padding: 5px;
+}
+
+#directions {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+#directions h2 {
+	margin-bottom: 0;
+}
+
+#dishes {
+	
+}
+
+aside {
+	background-color: #7ABFBF;
+}
+
+aside img {
+	float: left;
+	margin-top: -32px;
+	margin-left: 10px;
+	width: 25%;
+}
+
+aside h3 {
+	margin-left: 125px;
+}
+
+aside p {
+	margin-left: 125px;
+}
+
+#social figure {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+#social h2, #social h3 {
+	height: 0;
+}
+
+#social li {
+	font-size: 20px;
+	font-family: 'Bebas Neue', cursive;
+	text-decoration: none;
+}
+
+.footer {
+	width: 100%;
+	height: auto;
+}
+
+small {
+	font-size: 20px;
+	font-family: 'Bebas Neue', cursive;
+}
+
+footer h2, footer h3 {
+	visibility: hidden;
+	height: 0;
+}
+
+#social a {
+	color: #EB5428;
+	text-decoration: none;
+}
+
+footer #social {
+	display:inline-block;
+}
+
+#tacos {
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (min-width:768px){
+	body {
+		width: 768px;
+		margin: 0 auto;
+		transition: width .5s;
+	}
+
+	header {
+		width: 768px;
+}
+	
+	nav {
+		width: 768px;
+	}
+
+nav ul {
+		overflow: visible;
+		display: flex;
+		align-items: center;
+}
+
+	nav img {
+		width: 50px;
+}
+
+	h1 {
+		text-align: left;
+		padding-left: 10px;
+}
+
+	#tacos {
+		width: 768px;
+}
+	
+	#menu {
+		width: 768px;
+		background-color: rgba(0, 0, 0, .50);
+		justify-content: space-around;
+		top: 240px;
+}
+
+	#dropdown {
+		visibility: hidden;
+}
+
+	#navigation {
+		visibility: visible;
+		display: flex;
+}
+
+	#details {
+		text-align: center;
+}
+
+	#social {
+		position: relative;
+}
+
+	dl {
+		display: inline;
+}
+
+	dt {
+		flex-basis: 40%;
+		padding: 2px 4px;
+		text-align: center;
+		left: 150px;
+}
+
+	dd {
+		flex-basis: 50%;
+		flex-grow: 1;
+		margin: 0;
+		padding: 2px 4px;
+		text-align: center;
+		right: 150px;
+}
+
+}
+
+@media screen and (min-width:1280px){
+	body {
+		max-width: 1280px;
+		margin: 0 auto;
+		transition: width .5s;
+}
+
+	#details {
+		background-color: #0D0D0D;
+		color: #7ABFBF;
+}
+	dt dd {
+		display: inline-block;
+}
+
+#column {
+	
+}
+}
